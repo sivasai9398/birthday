@@ -3,7 +3,7 @@ def fun():
     try:
         print("Enter your date of birth in Format\nDD MM YY:")
         speaker = win32com.client.Dispatch("SAPI.SpVoice") 
-        speaker.Speak("Enter your date of birth in Format DATE,MONTH AND YEAR")
+        speaker.Speak("Enter your date of birth in the Format DATE,MONTH AND YEAR")
         a,b,c=input().split()
         num=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"]
         if a in num and int(c)>=2000:
@@ -28,3 +28,4 @@ def fun():
         print("enter valid date")
     except KeyError:
         print("enter valid month")
+ fun()
